@@ -72,25 +72,19 @@ html(lang='ru')
 			// end top-nav
 			// end HEADER.header
 			.header-block.header-block--page
+				.headerPaddingBlock
+			.sForm
 				.container
-					nav.breadcrumb
-						a.breadcrumb-item(href='#') Главная 
-						span.breadcrumb-item.active Каталог
-					.section-title.text-center.page-title
-						h1 Конспекты книг
-			.sDownload
-				img.sDownload__person(src="img/10-person.png", alt="")
-				a(href="#") СКАЧАТЬ &laquo;МАГИЯ УТРА&raquo; БЕСПЛАТНЫЙ КОНСПЕКТ КНИГИ
-				a(href="#") СКАЧАТЬ &laquo;ДУМАЙ КАК МИЛЛИОНЕР&raquo; БЕСПЛАТНЫЙ КОНСПЕКТ КНИГИ
-				img(src="img/title-before.svg", alt="")
-				a(href="#") КУПИТЬ РАБОЧУЮ ТЕТРАДЬ &laquo;СОЧИНЯЙ МЕЧТЫ&raquo;
-					.sDownload__descr Заполнять перед тем, как ставить себе цели на&nbsp;2020-й
-				a(href="#") КУПИТЬ ЕЖЕДНЕВНИК 2.0 
-					.sDownload__descr планер продуктивности
-				img(src="img/title-before.svg", alt="")
-				a(href="#") МОЙ ТЕЛЕГРАМ-КАНАЛ
-					.sDownload__descr Если Если ссылка не&nbsp;работает, попробуйте ввести в&nbsp;поиске в&nbsp;телеграм фразу <br>Книжный штаб
-		 
+					.sForm__title Введите свой E-mail и конспект придет вам на почту
+					.formWrap
+						label(for="")
+							span.formWrap__title Ваш e-mail: *
+							input(type="email" name="email" placeholder="Адрес эл. почты" required)
+						button.btn.sForm__btn(type='submit') Отправить
+							img(src="img/arrow-right.png", alt="")
+					blockquote Гарантирую, что Ваш e-mail не&nbsp;попадет в&nbsp;третьи рукии не&nbsp;будет использован для&nbsp;рассылки спама и&nbsp;прочей грязи
+						.sForm__name Юрий Шурханов
+
 
 		
 			footer.footer

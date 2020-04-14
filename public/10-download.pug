@@ -1,0 +1,157 @@
+doctype html
+html(lang='ru')
+	head
+		meta(charset='utf-8')
+		title Каталог
+		meta(name='description', content='о чем страница')
+		meta(http-equiv='X-UA-Compatible', content='IE=edge')
+		meta(name='viewport', content='width=device-width')
+		meta(property='og:image', content='path/to/image.jpg')
+		link(rel='shortcut icon', type='image/png', href='img/favicon/favicon.png')
+		// Custom Browsers Color
+		meta(name='theme-color', content='#123878')
+		link(rel='stylesheet', href='libs/magnificPopup/magnific-popup.css')
+		link(rel='stylesheet', href='libs/slick/slick.css')
+		link(rel='stylesheet', href='css/main.min.css')
+	body
+		.main-wrapper
+			.menu-mobile.menu-mobile--js.d-lg-none
+				.toggle-menu-mobile.toggle-menu-mobile--js
+					span
+				.menu-mobile__inner
+					ul.menu-mobile__nav
+						li.menu-mobile__item
+							a.menu-mobile__link.active(href='#') Каталог
+						li.menu-mobile__item.menu-mobile__item--has-child
+							a.menu-mobile__link(href='#') О проекте
+							ul.sub-menu
+								li.sub-menu__item
+									a.sub-menu__link(href='#') Контакты
+								li.sub-menu__item
+									a.sub-menu__link(href='#') От автора
+								li.sub-menu__item
+									a.sub-menu__link(href='#') Покупатели
+						li.menu-mobile__item
+							a.menu-mobile__link(href='#') Блог
+					.text-right
+			// мобильное меню
+			// start HEADER.header
+			header.header
+				// start top-nav
+				.top-nav
+					.container
+						.row
+							.col-gl-auto.col
+								a.top-nav__logo(href='#')
+									img.res-i(src='img/logo.png', alt='')
+							.col.d-none.d-lg-block
+								ul.top-nav__nav
+									li.top-nav__item
+										a.top-nav__link.active(href='#') Каталог
+									li.top-nav__item.top-nav__item--has-child
+										a.top-nav__link(href='#') О проекте
+										ul.sub-menu
+											li.sub-menu__item
+												a.sub-menu__link(href='#') Контакты
+											li.sub-menu__item
+												a.sub-menu__link(href='#') От автора
+											li.sub-menu__item
+												a.sub-menu__link(href='#') Покупатели
+									li.top-nav__item
+										a.top-nav__link(href='#') Блог
+							.col-auto
+								a.top-nav__btn(href='#')
+									svg.icon.icon-basket
+										use(xlink:href='img/svg/sprite.svg#basket')
+									.d-none.d-sm-inline Корзина
+									span.top-nav__btn-label 1
+							.col-auto.d-lg-none
+								.toggle-menu-mobile.toggle-menu-mobile--js.d-lg-none
+									span
+			// end top-nav
+			// end HEADER.header
+			.header-block.header-block--page
+				.container
+					nav.breadcrumb
+						a.breadcrumb-item(href='#') Главная 
+						span.breadcrumb-item.active Каталог
+					.section-title.text-center.page-title
+						h1 Конспекты книг
+		 
+
+		
+			footer.footer
+				.footer__head
+					.container
+						.row
+							.footer__col.col-lg-5
+								a.footer__logo(href='#')
+									img.res-i.lazy.res-i(src='#', data-srcset='img/logo-foot.png', alt='')
+							.footer__col.col-lg-3.col-sm
+								| ИП Шурханов Ю.А.
+								br
+								| УНП 490675479
+							.footer__col.col
+								| Время обработки сообщений
+								.strong Будние дни с 9:00 до 17:00
+				.footer__foot
+					.container
+						.row
+							.footer__col.col-lg-5
+								.row
+									.col-lg-auto.col-sm-6
+										.footer__text
+											| Платежи принимаются  через
+									.col-auto
+										img.lazy.res-i(src='#', data-srcset='img/pay-1.png', alt='')
+									.col-auto
+										img.lazy.res-i(src='#', data-srcset='img/pay-2.png', alt='')
+							.footer__col.col-lg-3.col-sm
+								.soc
+									a.soc__item(href='', target='_blank')
+										svg.icon.icon-vk
+											use(xlink:href='img/svg/sprite.svg#vk')
+									a.soc__item(href='', target='_blank')
+										svg.icon.icon-instagram
+											use(xlink:href='img/svg/sprite.svg#instagram')
+									a.soc__item(href='', target='_blank')
+										svg.icon.icon-telegram
+											use(xlink:href='img/svg/sprite.svg#telegram')
+									a.soc__item(href='', target='_blank')
+										svg.icon.icon-youtube
+											use(xlink:href='img/svg/sprite.svg#youtube')
+							.footer__col.col
+								img.lazy.res-i(src='#', data-srcset='img/card-1.png', alt='')
+								img.lazy.res-i(src='#', data-srcset='img/card-2.png', alt='')
+								img.lazy.res-i(src='#', data-srcset='img/card-3.png', alt='')
+								
+		#modal-basket.modal-win.zoom-anim-dialog.mfp-hide.modal-form
+			a.modal-win__img-wrap.img-bg(href='#', style=' background-image: url(img/prod-1.jpg);')
+				img.res-i(src='img/prod-1.jpg', alt='')
+			.modal-win__caption
+				.modal-win__title
+					a(href='#') Конспект книги “Тонкое искусство пофигизма”
+				a.modal-win__btn(href='#')
+					svg.icon.icon-basket
+						use(xlink:href='img/svg/sprite.svg#basket')
+					| Перейти в корзину
+				a.modal-win__btn(href='#')
+					svg.icon.icon-arr-back
+						use(xlink:href='img/svg/sprite.svg#arr-back')
+					| Продолжить покупки
+		// #modal-basket
+		// modal
+		script(src='js/jquery.min.js')
+		// modal libs
+		script(src='libs/magnificPopup/jquery.magnific-popup.min.js')
+		// modal libs
+		// slider libs
+		script(src='libs/slick/slick.min.js')
+		// /slider libs
+		// for svg libs
+		script(src='libs/svg4everybody-master/svg4everybody.min.js')
+		// /for svg libs
+		script(src='libs/jquery.touchSwipe.min.js')
+		script(src='libs/parallax/parallax.min.js')
+		script(src='libs/jquery.mask.min.js')
+		script(src='js/common.js')
